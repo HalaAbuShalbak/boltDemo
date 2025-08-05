@@ -363,7 +363,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .game-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     
     .game-setup {
@@ -415,7 +415,7 @@ body {
     }
     
     .game-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     .card {
