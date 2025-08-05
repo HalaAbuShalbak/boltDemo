@@ -173,9 +173,9 @@ body {
 
 .timer-label, .matches-label {
     font-size: 1rem;
-    opacity: 0.9;
     color: white;
     font-weight: bold;
+    
 }
 
 .timer, .matches {
