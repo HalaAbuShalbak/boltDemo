@@ -286,8 +286,6 @@ class MemoryGame {
             btn.classList.remove('selected');
         });
         
-        // تعطيل زر البدء
-        document.getElementById('startBtn').disabled = true;
     }
 }
 
