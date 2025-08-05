@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة بطاقات الذاكرة الفضائية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="game-title">🚀 لعبة حلا بطاقات الذاكرة الفضائية 🌌</h1>
+        </header>
+
+        <div class="game-setup" id="gameSetup">
+            <div class="level-selection">
+                <h2>اختر مستوى الصعوبة</h2>
+                <div class="level-buttons">
+                    <button class="level-btn" data-level="easy">
+                        <span class="level-emoji">⭐</span>
+                        <span class="level-name">سهل</span>
+                        <span class="level-info">4 بطاقات - 15 ثانية</span>
+                    </button>
+                    <button class="level-btn" data-level="medium">
+                        <span class="level-emoji">🌟</span>
+                        <span class="level-name">متوسط</span>
+                        <span class="level-info">6 بطاقات - 45 ثانية</span>
+                    </button>
+                    <button class="level-btn" data-level="hard">
+                        <span class="level-emoji">🌌</span>
+                        <span class="level-name">صعب</span>
+                        <span class="level-info">8 بطاقات - 60 ثانية</span>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="start-btn" id="startBtn" >
+                <span>🚀</span>
+                ابدأ اللعب الآن
+            </button>
+        </div>
+
+        <div class="game-board" id="gameBoard" style="display: none;">
+            <div class="game-info">
+                <div class="timer-container">
+                    <span class="timer-label">الوقت المتبقي:</span>
+                    <span class="timer" id="timer">00:00</span>
+                </div>
+                <div class="matches-counter">
+                    <span class="matches-label">الأزواج المكتملة:</span>
+                    <span class="matches" id="matches">0</span>
+                </div>
+            </div>
+            
+            <div class="preview-message" id="previewMessage">
+                <h3>احفظ مواقع البطاقات!</h3>
+                <p id="previewTimer">3</p>
+            </div>
+            
+            <div class="cards-container" id="cardsContainer">
+                <!-- البطاقات ستضاف هنا بواسطة JavaScript -->
+            </div>
+        </div>
+
+        <div class="game-result" id="gameResult" style="display: none;">
+            <div class="result-content">
+                <div class="result-emoji" id="resultEmoji">🎉</div>
+                <h2 class="result-title" id="resultTitle">مبروك!</h2>
+                <p class="result-message" id="resultMessage">لقد فزت في اللعبة!</p>
+                <button class="play-again-btn" id="playAgainBtn">
+                    <span>🔄</span>
+                    العب مرة أخرى
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
