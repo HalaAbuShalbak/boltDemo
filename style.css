@@ -424,8 +424,8 @@ body {
     }
     
     .card {
-        width: 70px;
-        height: 70px;
+        width: 120px;
+        height: 120px;
     }
     
     .card-front, .card-back {
