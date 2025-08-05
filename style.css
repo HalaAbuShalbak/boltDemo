@@ -5,11 +5,23 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: hotpink;
-    min-height: 100vh;
-    color: white;
-    overflow-x: hidden;
+  background: linear-gradient(100deg, #0b0c1e, #1a1f38, #3c0064, #0d0221);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 2px 2px;
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .game-container {
@@ -108,7 +120,7 @@ body {
 }
 
 .start-btn {
-    background: hotpink;
+    background: linear-gradient(135deg, #ec7f7f 0%, #ffa500 100%);;
     border: none;
     border-radius: 15px;
     padding: 15px 30px;
@@ -120,6 +132,7 @@ body {
     align-items: center;
     gap: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 .start-btn:disabled {
